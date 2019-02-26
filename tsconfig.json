@@ -6,6 +6,7 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "sourceMap": true,
+        "outDir": "./lib",
         "declaration": true,
         "lib": [
             "es2015",

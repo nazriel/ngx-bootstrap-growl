@@ -1,6 +1,8 @@
 import { Injectable } from "@angular/core";
 import { BootstrapAlertType } from "./bootstrap-alert-type.enum";
 import { BootstrapAlert } from "./bootstrap-alert.model";
+import { timer } from 'rxjs';
+
 import {
     Subject,
     Observable
@@ -64,7 +66,7 @@ export class BootstrapGrowlService {
     }
 
     private _scheduleAlertHide(timeout: number, alert: BootstrapAlert) {
-        let displayTimeout = Observable.timer(timeout);
+        let displayTimeout = timer(timeout);
         displayTimeout.subscribe(() => {
             this._removeAlert(alert, this.alertHolder, this.alerts);
         });
