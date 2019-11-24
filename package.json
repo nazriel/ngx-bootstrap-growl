@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "npm run tslint \"src/*.ts\"",
     "tslint": "tslint",
-    "prepublish": "npm run lint && ngc && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json ."
+    "prepublish": "npm run lint && ngc --declaration && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json ."
   },
   "repository": {
     "type": "git",
