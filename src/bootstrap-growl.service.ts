@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { BootstrapAlertType } from "./bootstrap-alert-type.enum";
 import { BootstrapAlert } from "./bootstrap-alert.model";
-import { timer } from 'rxjs';
+import { timer } from "rxjs";
 
 import {
     Subject,
