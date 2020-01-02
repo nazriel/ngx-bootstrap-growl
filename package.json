@@ -26,10 +26,10 @@
   "homepage": "https://github.com/trankin/ngx-bootstrap-growl#readme",
   "dependencies": {},
   "devDependencies": {
-    "@angular/common": "~7.2.0",
-    "@angular/compiler": "~7.2.0",
-    "@angular/compiler-cli": "~7.2.0",
-    "@angular/core": "~7.2.0",
+    "@angular/common": "~8.2.0",
+    "@angular/compiler": "~8.2.0",
+    "@angular/compiler-cli": "~8.2.0",
+    "@angular/core": "~8.2.0",
     "core-js": "^2.5.4",
     "@types/node": "~8.9.4",
     "copyfiles": "^2.1.0",
@@ -39,7 +39,7 @@
     "zone.js": "~0.9.1"
   },
   "peerDependencies": {
-    "@angular/core": "~7.2.0",
+    "@angular/core": "~8.2.0",
     "rxjs": "~6.x",
     "zone.js": "0.9.x"
   },
