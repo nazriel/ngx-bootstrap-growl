@@ -1,6 +1,7 @@
 import { BootstrapAlertType } from "./bootstrap-alert-type.enum";
 import { BootstrapAlert } from "./bootstrap-alert.model";
 import { Subject } from "rxjs";
+import * as i0 from "@angular/core";
 export declare class BootstrapGrowlService {
     alerts: Subject<BootstrapAlert[]>;
     alertHolder: BootstrapAlert[];
@@ -14,4 +15,6 @@ export declare class BootstrapGrowlService {
     private _scheduleAlertHide;
     private _convertTypeToCssClass;
     private _removeAlertById;
+    static ɵfac: i0.ɵɵFactoryDeclaration<BootstrapGrowlService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<BootstrapGrowlService>;
 }

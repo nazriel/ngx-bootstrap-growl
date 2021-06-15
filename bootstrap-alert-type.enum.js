@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BootstrapAlertType = void 0;
 var BootstrapAlertType;
 (function (BootstrapAlertType) {
     BootstrapAlertType[BootstrapAlertType["SUCCESS"] = 0] = "SUCCESS";

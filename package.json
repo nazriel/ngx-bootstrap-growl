@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "npm run tslint \"src/*.ts\"",
     "tslint": "tslint",
-    "prepublish": "npm run lint && ngc --declaration && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json ."
+    "prepublish": "npm run lint && ngc --declaration && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json .",
+    "postinstall": "ngcc"
   },
   "repository": {
     "type": "git",
@@ -26,22 +27,22 @@
   "homepage": "https://github.com/trankin/ngx-bootstrap-growl#readme",
   "dependencies": {},
   "devDependencies": {
-    "@angular/common": "~8.2.0",
-    "@angular/compiler": "~8.2.0",
-    "@angular/compiler-cli": "~8.2.0",
-    "@angular/core": "~8.2.0",
+    "@angular/common": "~12.0.4",
+    "@angular/compiler": "~12.0.4",
+    "@angular/compiler-cli": "~12.0.4",
+    "@angular/core": "~12.0.4",
     "core-js": "^2.5.4",
-    "@types/node": "~8.9.4",
+    "@types/node": "^15.12.2",
     "copyfiles": "^2.1.0",
-    "tslint": "~5.11.0",
-    "typescript": "~3.2.2",
-    "rxjs": "~6.4.0",
-    "zone.js": "~0.9.1"
+    "tslint": "~6.1.0",
+    "typescript": "~4.2.3",
+    "rxjs": "^6.6.7",
+    "zone.js": "~0.11.4"
   },
   "peerDependencies": {
-    "@angular/core": "~8.2.0",
-    "rxjs": "~6.x",
-    "zone.js": "0.9.x"
+    "@angular/core": "~12.0.4",
+    "rxjs": "^6.6.7",
+    "zone.js": "~0.11.4"
   },
   "typings": "./lib/index.d.ts"
 }
